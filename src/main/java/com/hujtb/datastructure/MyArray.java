@@ -4,12 +4,23 @@ package com.hujtb.datastructure;
  * 数组
  */
 public class MyArray {
+
     private int[] array;
+    // 数组中存放元素长度
     private int size;
 
     public MyArray(int capacity) {
         this.array = new int[capacity];
         size = 0;
+    }
+
+    /**
+     * 判断数组是否为空
+     *
+     * @return
+     */
+    public boolean isEmpty() {
+        return this.size == 0;
     }
 
     /**
@@ -39,8 +50,8 @@ public class MyArray {
 
     /**
      * 数组删除元素
-     * @param index 删除的位置
      *
+     * @param index 删除的位置
      */
     public int delete(int index) throws Exception {
         //判断访问下标是否超出范围
@@ -55,7 +66,6 @@ public class MyArray {
         size--;
         return deletedElement;
     }
-
 
     /**
      * 数组扩容
