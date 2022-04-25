@@ -4,6 +4,7 @@ package com.hujtb.datastructure;
  * 队列
  */
 public class MyQueue {
+
     private int[] array;
     private int front;
     private int rear;
